@@ -7,6 +7,7 @@ from transformers import AutoTokenizer, TFBertForMaskedLM
 # Pre-trained masked language model
 MODEL = "bert-base-uncased"
 
+
 # Number of predictions to generate
 K = 3
 
