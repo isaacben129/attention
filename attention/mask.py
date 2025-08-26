@@ -60,7 +60,7 @@ def get_color_for_attention_score(attention_score):
     given `attention_score`. Each value should be in the range [0, 255].
     """
 
-    value = round(attention_score * 255)
+    value = round(attention_score.numpy().tolist()[0] * 255)
     print(value)
     return tuple([value, value, value])
 
